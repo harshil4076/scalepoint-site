@@ -123,7 +123,7 @@ export default function Home() {
           work, let&apos;s talk.
         </p>
         <a
-          href="mailto:your-email@scalepoint.com"
+          href="mailto:harshil4076@gmail.com"
           className="cta-link"
         >
           Get in touch →
@@ -135,20 +135,13 @@ export default function Home() {
         <div className="footer-left">© 2026 Scalepoint</div>
         <div className="footer-links">
           <a
-            href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+            href="https://www.linkedin.com/company/data-expert-services"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
           </a>
-          <a
-            href="https://github.com/harshil4076"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a href="mailto:your-email@scalepoint.com">
+          <a href="mailto:harshil4076@gmail.com">
             Email
           </a>
         </div>

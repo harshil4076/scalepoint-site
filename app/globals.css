@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --text: #1a1a1a;
-  --text-secondary: #555555;
-  --text-tertiary: #888888;
-  --bg: #ffffff;
-  --border: #e0e0e0;
-  --accent: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-tertiary: rgba(255, 255, 255, 0.35);
+  --bg: #141414;
+  --bg-section: #1a1a1a;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #B5613E;
 }
 
 * {
@@ -16,123 +17,99 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'Inter', Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 ::selection {
-  background: var(--text);
-  color: var(--bg);
+  background: var(--accent);
+  color: #fff;
 }
 
 a {
   color: var(--text);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  text-decoration: none;
+  color: var(--accent);
 }
 
 .page {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 80px 24px 120px;
+  padding: 80px 32px 120px;
 }
 
 /* ── Header ── */
 
 .header {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--border);
 }
 
 .logo {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text);
-  margin-bottom: 60px;
+  color: var(--text-tertiary);
+  margin-bottom: 72px;
 }
 
 .headline {
-  font-size: 2.2rem;
-  font-weight: 600;
-  line-height: 1.25;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
   letter-spacing: -0.02em;
-  margin-bottom: 28px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
   color: var(--text);
 }
 
 .subheadline {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 300;
   color: var(--text-secondary);
   line-height: 1.75;
+  max-width: 540px;
 }
 
 /* ── Sections ── */
 
 .section {
-  margin-bottom: 64px;
+  margin-bottom: 72px;
 }
 
 .section-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
-  margin-bottom: 24px;
+  color: var(--accent);
+  margin-bottom: 20px;
 }
 
 .section p {
   color: var(--text-secondary);
   margin-bottom: 16px;
+  font-size: 0.95rem;
+  font-weight: 300;
 }
 
 .section p:last-child {
   margin-bottom: 0;
-}
-
-/* ── Services ── */
-
-.services-list {
-  list-style: none;
-  padding: 0;
-}
-
-.services-list li {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.services-list li:first-child {
-  border-top: 1px solid var(--border);
-}
-
-.service-name {
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 6px;
-  font-size: 1rem;
-}
-
-.service-desc {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.65;
 }
 
 /* ── What we build ── */
@@ -143,18 +120,29 @@ a:hover {
 }
 
 .build-list li {
-  padding-left: 20px;
+  padding: 16px 0;
+  padding-left: 16px;
   position: relative;
   color: var(--text-secondary);
-  margin-bottom: 12px;
   font-size: 0.95rem;
+  font-weight: 300;
+  border-bottom: 1px solid var(--border);
+}
+
+.build-list li:first-child {
+  border-top: 1px solid var(--border);
 }
 
 .build-list li::before {
-  content: '—';
+  content: '';
   position: absolute;
   left: 0;
-  color: var(--text-tertiary);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
 }
 
 /* ── Divider ── */
@@ -162,42 +150,79 @@ a:hover {
 .divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 64px 0;
+  margin: 72px 0;
+}
+
+/* ── Services ── */
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.services-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.service-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+.service-desc {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 /* ── CTA ── */
 
 .cta-section {
   margin-top: 80px;
+  padding: 48px;
+  border: 1px solid var(--border);
+  background: var(--bg-section);
 }
 
 .cta-text {
   color: var(--text-secondary);
   margin-bottom: 28px;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 .cta-link {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 2px solid var(--text);
-  padding-bottom: 2px;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  padding: 12px 24px;
   transition: opacity 0.2s ease;
 }
 
 .cta-link:hover {
-  opacity: 0.6;
+  opacity: 0.85;
+  color: #fff;
 }
 
 /* ── Footer ── */
 
 .footer {
   margin-top: 120px;
-  padding-top: 32px;
+  padding-top: 28px;
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
@@ -207,23 +232,23 @@ a:hover {
 }
 
 .footer-left {
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
+  font-weight: 400;
   color: var(--text-tertiary);
   letter-spacing: 0.05em;
 }
 
 .footer-links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .footer-links a {
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
+  font-weight: 400;
   color: var(--text-tertiary);
-  text-decoration: none;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .footer-links a:hover {
@@ -233,20 +258,17 @@ a:hover {
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
-  html {
-    font-size: 16px;
-  }
-
   .page {
     padding: 48px 20px 80px;
   }
 
   .header {
-    margin-bottom: 56px;
+    margin-bottom: 64px;
+    padding-bottom: 56px;
   }
 
-  .headline {
-    font-size: 1.8rem;
+  .cta-section {
+    padding: 28px;
   }
 
   .footer {
