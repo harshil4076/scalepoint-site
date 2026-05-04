@@ -1,6 +1,6 @@
 # Scalepoint
 
-Minimal landing page for Scalepoint — Data & AI Consulting.
+Minimal landing page for Scalepointdata.com — Data & AI Consulting.
 
 ## Local development
 
