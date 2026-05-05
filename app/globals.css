@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --text: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.6);
-  --text-tertiary: rgba(255, 255, 255, 0.35);
-  --bg: #141414;
-  --bg-section: #1a1a1a;
-  --border: rgba(255, 255, 255, 0.1);
+  --text: #141414;
+  --text-secondary: rgba(20, 20, 20, 0.75);
+  --text-tertiary: rgba(20, 20, 20, 0.35);
+  --bg: #ffffff;
+  --bg-section: #f5f5f5;
+  --border: rgba(20, 20, 20, 0.1);
   --accent: #B5613E;
 }
 
@@ -64,7 +64,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   margin-bottom: 72px;
 }
 
@@ -234,7 +234,7 @@ a:hover {
 .footer-left {
   font-size: 0.7rem;
   font-weight: 400;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   letter-spacing: 0.05em;
 }
 
@@ -246,7 +246,7 @@ a:hover {
 .footer-links a {
   font-size: 0.7rem;
   font-weight: 400;
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
