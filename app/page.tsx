@@ -3,15 +3,23 @@ export default function Home() {
     <div className="page">
       {/* ── Header ── */}
       <header className="header">
-        <div className="logo">Scalepoint</div>
+        <div className="logo">
+          <svg viewBox="-6 -6 283 54" width="200" height="38" role="img" aria-label="Scalepoint">
+            <rect x="0" y="10" width="32" height="32" rx="2" fill="none" stroke="currentColor" strokeWidth="2.5"/>
+            <rect x="18" y="0" width="32" height="32" rx="2" fill="none" stroke="currentColor" strokeWidth="2.5"/>
+            <circle cx="25" cy="21" r="4" fill="currentColor"/>
+            <text x="68" y="29" fontFamily="'IBM Plex Sans', sans-serif" fontWeight="500" fontSize="22" letterSpacing="0.14em" fill="currentColor">SCALEPOINT</text>
+          </svg>
+        </div>
 
         <h1 className="headline">
-          We build the internal software your team actually uses.
+          We build and run the data infrastructure for companies that don&apos;t have a data team
         </h1>
 
         <p className="subheadline">
-          Data &amp; AI consulting for companies that have outgrown off-the-shelf
-          tools but don&apos;t have the bandwidth to build what they need in-house.
+          We build and manage the data layer for growing companies: dashboards,
+          integrations, AI-powered analytics, and automated workflows. Deployed
+          on your infrastructure, run by us.
         </p>
       </header>
 
@@ -19,14 +27,18 @@ export default function Home() {
       <section className="section">
         <div className="section-label">The problem</div>
         <p>
-          Most companies hit the same wall. You&apos;ve got the systems, the data,
-          the people — but the tools that tie it all together don&apos;t exist yet.
+          Your technology team keeps the lights on: infrastructure, security,
+          vendor management, helpdesk. But the business keeps asking for more.
+          Real-time dashboards. Connected systems. Intelligent automation.
+          That&apos;s not an IT problem. It&apos;s a data and AI problem. And
+          it&apos;s not what your team was built to solve.
         </p>
         <p>
-          Your operators are duct-taping spreadsheets. Your managers are waiting
-          on reports that should take seconds. Nobody&apos;s building the internal
-          products that would make the business run smoother, because it&apos;s never
-          urgent enough to make the roadmap.
+          So it falls through the cracks. Finance builds their own spreadsheets.
+          Sales tracks pipeline in their heads. Operations emails around CSV
+          files. Every department has a different number for the same metric.
+          You know you need a data capability, but building a full team from
+          scratch takes months and costs a fortune.
         </p>
       </section>
 
@@ -34,32 +46,37 @@ export default function Home() {
       <section className="section">
         <div className="section-label">What we do</div>
         <p>
-          We design and ship custom internal tools, workflow apps, and data
-          products that sit between your systems and the people who rely on
-          them — so your team spends less time chasing information and more
-          time acting on it.
+          We become your data and AI team without you having to build one. We
+          design, deploy, and manage your data infrastructure on your cloud, on
+          your terms. Your technology team stays focused on what they&apos;re
+          good at. Your business gets the dashboards, automations, and
+          intelligence they&apos;ve been asking for.
+        </p>
+        <p>
+          Everything we build lives on your infrastructure. You own it. We run
+          it. No vendor lock-in, no black boxes, no six-month timelines.
         </p>
       </section>
 
-      {/* ── What We Build ── */}
+      {/* ── Who We Work With ── */}
       <section className="section">
-        <div className="section-label">What we build</div>
+        <div className="section-label">Who we work with</div>
         <ul className="build-list">
           <li>
-            Custom internal tools that replace the spreadsheets and workarounds
-            slowing your team down.
+            Companies that have outgrown spreadsheets and manual reporting but
+            aren&apos;t ready to build a full data function in-house.
           </li>
           <li>
-            Self-serve dashboards and portals so decision-makers get answers
-            without waiting on anyone.
+            CIOs and IT leaders being pulled into data and analytics work that
+            falls outside their team&apos;s core mandate.
           </li>
           <li>
-            Workflow apps that automate the repetitive work your team does
-            every week.
+            Chief Data and AI Officers standing up a new data capability and
+            need execution capacity fast.
           </li>
           <li>
-            Data products built on your existing stack — no rip and replace,
-            no six-month timeline.
+            Operations, finance, and revenue leaders who are tired of waiting
+            weeks for answers that should take seconds.
           </li>
         </ul>
       </section>
@@ -71,28 +88,39 @@ export default function Home() {
         <div className="section-label">Services</div>
         <ul className="services-list">
           <li>
-            <div className="service-name">Agentic Analytics &amp; AI Context Engineering</div>
+            <div className="service-name">Self-Serve Dashboards &amp; Reporting</div>
             <div className="service-desc">
-              AI-powered analytics agents that understand your business context.
-              Ask questions in plain English, get SQL-backed answers tailored to
-              who&apos;s asking — an analyst gets granular breakdowns, a CFO gets
-              cost trends.
-            </div>
-          </li>
-          <li>
-            <div className="service-name">Analytics Dashboarding</div>
-            <div className="service-desc">
-              Semantic layers, governed metrics, and self-serve dashboards that
-              your team actually trusts. We define your metrics once and make
-              sure every report tells the same story.
+              Your leadership and operations teams get dashboards they can
+              actually use, with no more emailing someone for a number. We
+              define your metrics once, build a governed semantic layer, and
+              make sure every report across the organization tells the same
+              story.
             </div>
           </li>
           <li>
             <div className="service-name">Data Integration</div>
             <div className="service-desc">
-              Connect your systems, clean your data, and build the pipelines
-              that keep everything in sync. From PDF extraction to warehouse
-              loading — we handle the plumbing so your team can focus on insight.
+              Connect your ERP, CRM, HRIS, accounting software, and other
+              systems into a single source of truth. We handle the plumbing,
+              from API connections to document extraction to warehouse design,
+              so your data flows where it needs to go.
+            </div>
+          </li>
+          <li>
+            <div className="service-name">AI-Powered Analytics</div>
+            <div className="service-desc">
+              Ask your data questions in plain English and get answers in
+              seconds. We build analytics agents that understand your business
+              context and tailor responses to who&apos;s asking: your operations
+              manager sees different insights than your CFO.
+            </div>
+          </li>
+          <li>
+            <div className="service-name">Workflow Automation</div>
+            <div className="service-desc">
+              That report your team builds manually every Monday? The invoice
+              data someone re-keys from PDFs? The status updates someone copies
+              between systems? We automate it. Less busy work, more real work.
             </div>
           </li>
           <li>
@@ -100,16 +128,36 @@ export default function Home() {
             <div className="service-desc">
               Custom Power Apps, Power Automate flows, and Power BI solutions
               that extend what your Microsoft stack can do. Built for the way
-              your team actually works.
+              your organization actually works.
             </div>
           </li>
+        </ul>
+      </section>
+
+      <hr className="divider" />
+
+      {/* ── How It Works ── */}
+      <section className="section">
+        <div className="section-label">How it works</div>
+        <ul className="build-list">
           <li>
-            <div className="service-name">Workflow Automation</div>
-            <div className="service-desc">
-              Identify the repetitive, manual processes costing your team hours
-              every week and turn them into reliable, automated workflows.
-              Less busy work, more real work.
-            </div>
+            We start with a discovery session: what&apos;s broken, what takes
+            too long, what does leadership wish they could see.
+          </li>
+          <li>
+            We assess your systems, data, and current capabilities, typically
+            in one to two days.
+          </li>
+          <li>
+            We propose a solution with a clear scope, cost, and timeline. Most
+            engagements ship initial results in 4 to 8 weeks.
+          </li>
+          <li>
+            We build and deploy on your infrastructure. You own everything.
+          </li>
+          <li>
+            We stay on to manage, monitor, and evolve the solution as your
+            needs grow.
           </li>
         </ul>
       </section>
@@ -119,14 +167,14 @@ export default function Home() {
       {/* ── CTA ── */}
       <section className="cta-section">
         <p className="cta-text">
-          If your team is spending more time managing tools than doing real
-          work, let&apos;s talk.
+          If your organization needs a data capability but isn&apos;t ready to
+          build one from scratch, let&apos;s talk.
         </p>
         <a
-          href="mailto:harshil4076@gmail.com"
+          href="mailto:consult@scalepointdata.com"
           className="cta-link"
         >
-          Get in touch →
+          Get in touch &rarr;
         </a>
       </section>
 
@@ -141,7 +189,7 @@ export default function Home() {
           >
             LinkedIn
           </a>
-          <a href="mailto:harshil4076@gmail.com">
+          <a href="mailto:consult@scalepointdata.com">
             Email
           </a>
         </div>
