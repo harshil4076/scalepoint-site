@@ -13,13 +13,13 @@ export default function Home() {
         </div>
 
         <h1 className="headline">
-          We build and run the data infrastructure for companies that don&apos;t have a data team
+          We embed with your team and build the data and AI projects you don&apos;t have the bandwidth to tackle yourself
         </h1>
 
         <p className="subheadline">
-          We build and manage the data layer for growing companies: dashboards,
-          integrations, AI-powered analytics, and automated workflows. Deployed
-          on your infrastructure, run by us.
+          Our engineers work alongside your team to ship data analytics and AI
+          projects — dashboards, integrations, AI-powered analytics, and
+          workflow automation. Built on your stack, owned by you.
         </p>
       </header>
 
@@ -37,8 +37,8 @@ export default function Home() {
           So it falls through the cracks. Finance builds their own spreadsheets.
           Sales tracks pipeline in their heads. Operations emails around CSV
           files. Every department has a different number for the same metric.
-          You know you need a data capability, but building a full team from
-          scratch takes months and costs a fortune.
+          The projects that would actually move the needle keep getting pushed
+          to next quarter.
         </p>
       </section>
 
@@ -46,15 +46,14 @@ export default function Home() {
       <section className="section">
         <div className="section-label">What we do</div>
         <p>
-          We become your data and AI team without you having to build one. We
-          design, deploy, and manage your data infrastructure on your cloud, on
-          your terms. Your technology team stays focused on what they&apos;re
-          good at. Your business gets the dashboards, automations, and
-          intelligence they&apos;ve been asking for.
+          We send engineers who embed directly with your team to build the data
+          and AI projects that keep getting deprioritized. We work alongside
+          you — not as a vendor you hand work off to, but as technical partners
+          who sit in your environment, use your tools, and ship real things.
         </p>
         <p>
-          Everything we build lives on your infrastructure. You own it. We run
-          it. No vendor lock-in, no black boxes, no six-month timelines.
+          Everything we build lives on your infrastructure. You own it. No
+          vendor lock-in, no black boxes, no six-month timelines.
         </p>
       </section>
 
@@ -63,16 +62,16 @@ export default function Home() {
         <div className="section-label">Who we work with</div>
         <ul className="build-list">
           <li>
-            Companies that have outgrown spreadsheets and manual reporting but
-            aren&apos;t ready to build a full data function in-house.
+            Teams with a backlog of data and AI projects and no one to build
+            them.
           </li>
           <li>
-            CIOs and IT leaders being pulled into data and analytics work that
-            falls outside their team&apos;s core mandate.
+            CIOs and IT leaders being pulled into analytics work that falls
+            outside their team&apos;s core mandate.
           </li>
           <li>
-            Chief Data and AI Officers standing up a new data capability and
-            need execution capacity fast.
+            Chief Data and AI Officers who need execution capacity fast — not
+            more strategy decks.
           </li>
           <li>
             Operations, finance, and revenue leaders who are tired of waiting
@@ -141,22 +140,23 @@ export default function Home() {
         <div className="section-label">How it works</div>
         <ul className="build-list">
           <li>
-            We start with a discovery session: what&apos;s broken, what takes
-            too long, what does leadership wish they could see.
+            We start with a discovery session: what&apos;s on the backlog,
+            what&apos;s blocking the team, what leadership has been asking for.
           </li>
           <li>
-            We assess your systems, data, and current capabilities, typically
-            in one to two days.
+            We assess your systems, data, and current stack — typically in one
+            to two days.
           </li>
           <li>
-            We propose a solution with a clear scope, cost, and timeline. Most
-            engagements ship initial results in 4 to 8 weeks.
+            We propose a clear scope, cost, and timeline. Most engagements ship
+            initial results in 4 to 8 weeks.
           </li>
           <li>
-            We build and deploy on your infrastructure. You own everything.
+            We embed with your team and build. We work in your environment,
+            alongside your people, on your infrastructure.
           </li>
           <li>
-            We stay on to manage, monitor, and evolve the solution as your
+            You own everything we build. We can stay on to evolve it as your
             needs grow.
           </li>
         </ul>
@@ -167,8 +167,8 @@ export default function Home() {
       {/* ── CTA ── */}
       <section className="cta-section">
         <p className="cta-text">
-          If your organization needs a data capability but isn&apos;t ready to
-          build one from scratch, let&apos;s talk.
+          If you have data and AI projects that keep getting pushed to next
+          quarter, let&apos;s talk.
         </p>
         <a
           href="mailto:consult@scalepointdata.com"
