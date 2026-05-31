@@ -175,37 +175,60 @@ export default function Home() {
               <span className="cs-sector">Municipal Government &middot; Ontario</span>
             </div>
             <h3 className="cs-title">
-              From Spreadsheets to Real-Time Operations: A Public Works Dashboard Platform
+              One Version of the Truth: A Municipal Operations Analytics Platform on Microsoft Fabric
             </h3>
             <div className="cs-body">
               <div className="cs-block">
                 <div className="cs-block-label">The situation</div>
                 <p>
-                  A mid-size Ontario municipality&apos;s public works team was tracking
-                  inspections, project status, and field activity across disconnected
-                  spreadsheets and email chains. Leadership had no real-time visibility.
-                  The IT team was being asked to produce reports their tools weren&apos;t
-                  built for.
+                  A mid-size Ontario municipality had five operational data sources — their
+                  financial ERP, a Cityworks work order system, a 311 service request
+                  platform, a tax and billing system, and dozens of department spreadsheets
+                  in SharePoint and Excel — none of which talked to each other. Finance ran
+                  budget reports from manual exports. Public works had no live view of open
+                  work orders. The 311 team couldn&apos;t surface service request trends
+                  without pulling raw data and rebuilding it in Excel every week. Leadership
+                  was making decisions from numbers that were weeks old and often
+                  contradicted each other depending on who you asked.
                 </p>
               </div>
               <div className="cs-block">
                 <div className="cs-block-label">What we built</div>
                 <p>
-                  We embedded with the IT and operations teams to design and deliver an
-                  interactive Power BI reporting platform covering project analytics across
-                  the organization. We applied a consistent design system — defined color
-                  tokens, spacing scales, and typography — so every dashboard told a
-                  coherent story. We also defined REST API contracts between the ERP and
-                  operational systems, giving the dashboards a live, accurate data source
-                  rather than stale exports.
+                  We designed and delivered a unified Municipal Operations Analytics
+                  Platform on Microsoft Fabric, hosted in Canada Central to meet data
+                  residency requirements — on the municipality&apos;s own tenant with no
+                  vendor lock-in.
+                </p>
+                <p>
+                  All five source systems were connected through Azure Data Factory
+                  pipelines and Dataflows Gen2, landing raw data into a Bronze Lakehouse
+                  in OneLake. From there, data was cleaned and conformed in a Silver
+                  Lakehouse, then modeled into a Gold Warehouse using a star schema in
+                  T-SQL. A single semantic model sits on top — metrics defined once, used
+                  everywhere — connected to Power BI via Direct Lake for fast,
+                  live reporting.
+                </p>
+                <p>
+                  We delivered three Power BI dashboards in two phases: a Budget &amp;
+                  Finance dashboard and Operational KPIs dashboard in weeks one through
+                  four, followed by a Capital Projects dashboard and Public Works + 311
+                  view in weeks five through eight. We also wired up Data Activator to
+                  send threshold alerts directly to Teams and email, so the operations
+                  team gets notified without needing to check a dashboard. Microsoft Entra
+                  ID handles authentication and row-level security, and Microsoft Purview
+                  tracks lineage and sensitivity labels across the platform.
                 </p>
               </div>
               <div className="cs-block">
                 <div className="cs-block-label">The outcome</div>
                 <p>
-                  Leadership gained a single, trusted view of project status across
-                  departments. The IT team handed off a governed reporting platform they
-                  own and maintain — no vendor dependency, no ongoing licensing cost.
+                  Leadership now has a single, trusted number for every metric — budget
+                  vs. actuals, open work orders, 311 response times, capital project
+                  spend — pulled live from source systems. Department heads self-serve
+                  their own reports. The IT team owns the entire platform on their own
+                  infrastructure and Microsoft tenant, with no third-party analytics
+                  vendor involved. Initial dashboards went live in four weeks.
                 </p>
               </div>
             </div>
