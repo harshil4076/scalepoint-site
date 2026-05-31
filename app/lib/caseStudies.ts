@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
     outcome: [
       'Leadership now has a single, trusted number for every metric — budget vs. actuals, open work orders, 311 response times, capital project spend — pulled live from source systems. Department heads self-serve their own reports. The IT team owns the entire platform on their own infrastructure and Microsoft tenant, with no third-party analytics vendor involved. Initial dashboards went live in four weeks.',
     ],
-    image: '/case-studies/municipal-architecture.png',
+    image: '/case-studies/municipal-architecture.jpg',
     imageAlt: 'Reference architecture diagram for the Municipal Operations Analytics Platform — Microsoft Fabric, Azure Data Factory, OneLake medallion, and Power BI',
   },
   {
