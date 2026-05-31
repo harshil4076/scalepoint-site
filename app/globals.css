@@ -181,6 +181,80 @@ a:hover {
   line-height: 1.7;
 }
 
+/* ── Case Studies ── */
+
+.case-studies-list {
+  list-style: none;
+  padding: 0;
+}
+
+.case-study {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.case-study:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.cs-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.cs-tag {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  padding: 3px 8px;
+  line-height: 1.6;
+}
+
+.cs-sector {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.cs-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.cs-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cs-block-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 6px;
+}
+
+.cs-block p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
 /* ── CTA ── */
 
 .cta-section {
